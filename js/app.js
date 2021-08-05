@@ -130,8 +130,9 @@ let q5 =prompt("is mandi a jordanian meal ?")
         let q7=prompt(" what is the traditional meal in jordan ? enter the name of it  1- Mansaf 2- Pizza 3- rashoof 4- Shawerma 5- maqlooba 6- Kimber 7-kebab").toLowerCase();
         
           loop2:
-        for(k=0;k<meal.length();k++){
-             if(meal[k]==q5){
+        for(let k=0; k<4 ; k++){
+             if( meal[k] == q7){
+                 alert("your answer is correct " + q7)
                 ans++;
                 break loop1;
              }
@@ -143,15 +144,17 @@ let q5 =prompt("is mandi a jordanian meal ?")
 
     }
     
-alert("the correct answers are")
+alert("the correct answers are ")
 let b=0;
-for(b=0; b<meal.length();b++){
+for(b=0; b <4 ;b++){
+    console.log("the traditional meals are  " +  meal[b])
 
-    alert("the traditional meals are" + meal[b])
+    alert("the traditional meals are " + meal[b])
 }
 
 
 alert("your score out of 7 is " + ans)
+console.log("your score is out of 7 " + ans)
 let name1=prompt ("u r Welcome may u enter your name please ").toUpperCase();
 console.log("nice name" + name1);
 alert("nice name " + name1)
